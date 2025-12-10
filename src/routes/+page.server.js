@@ -1,4 +1,4 @@
-import {supabase} from '$lib/supabase'
+import { supabase } from '$lib/supabase'
 
 export async function load() {
     const { data, error } = await supabase
@@ -6,10 +6,9 @@ export async function load() {
     .select('*')
 
     if (error) console.error('Error: ', error)
-    else console.log('Data: ', data)
+    else console.log('Products: ', data)
 
     return {
         products: data
     }
 }
-
