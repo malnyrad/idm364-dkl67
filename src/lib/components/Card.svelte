@@ -2,7 +2,7 @@
     let { link, image, name } = $props();
 </script>
 
-<a href="{link}">
+<a href="/products/{link}">
     <img src="/images/{image}" alt="{name}"/>
     <p>{name}</p>
 </a>
