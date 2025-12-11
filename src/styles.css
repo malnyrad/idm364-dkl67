@@ -1,3 +1,8 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
 /* FONTS ================================================== */
 
 @font-face {
@@ -19,25 +24,57 @@ p {
     margin: 0;
 }
 
-/* HOME =================================================== */
+/* NAVBAR ================================================= */
 
-.container {
+nav {
+    background-color: #e6dac2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.logo {
     align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo img {
+    height: 20%;
+    max-width: 10vw;
+    padding-right: 1rem;
+}
+
+/**/
+
+.container-outer {
+    border: 10px solid #553624;
+    border-radius: 8px;
+}
+
+.container-inner {
+    align-items: center;
+    border: 6px solid #ffffff;
+    border-radius: 4px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+a:has(> .card) {
+    margin: 1rem;
+}
+
 .card {
     align-items: center;
     background-color: #f9e2c0;
     border: 2px solid #baa381;
-    border-radius: 3px;
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1rem;
     min-height: 200px;
     max-width: 40vw;
     min-width: 200px;

@@ -2,15 +2,18 @@
     let { data } = $props()
     $inspect(data)
 
+    import Header from '$lib/components/Header.svelte';
     import Card from '$lib/components/Card.svelte';
 </script>
 
-<h1>Hello and welcome to my site!</h1>
+<Header />
 
-<div class="container">
-    {#if data.products}
-        {#each data.products as product}
-            <Card link="{product.slug}" image="{product.image}" name="{product.name}" />
-        {/each}
-    {/if}
+<div class="container-outer">
+    <div class="container-inner">
+        {#if data.products}
+            {#each data.products as product}
+                <Card link="{product.slug}" image="{product.image}" name="{product.name}" />
+            {/each}
+        {/if}
+    </div>
 </div>
