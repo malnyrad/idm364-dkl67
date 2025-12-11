@@ -3,6 +3,8 @@
 </script>
 
 <a href="/products/{link}">
-    <img src="/images/{image}" alt="{name}"/>
-    <p>{name}</p>
+    <div class="card">
+        <img src="/images/{image}" alt="{name}"/>
+        <p>{name}</p>
+    </div>
 </a>
