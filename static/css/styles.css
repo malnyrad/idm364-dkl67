@@ -1,4 +1,6 @@
 html {
+    background-color: #f0d8b2;
+    color: #30210c;
     margin: 0;
     padding: 0;
 }
@@ -16,6 +18,14 @@ html {
 
 h1 {
     font-family: "Jersey 15", Helvetica, sans-serif;
+    line-height: 0%;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Jersey 15", Helvetica, sans-serif;
+    line-height: 100%;
+    margin: 0;
 }
 
 p {
@@ -24,15 +34,25 @@ p {
     margin: 0;
 }
 
+a, a:visited {
+    color: #30210c;
+    text-decoration: none;
+}
+
 /* NAVBAR ================================================= */
 
 nav {
-    background-color: #e6dac2;
+    align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 1rem;
+    justify-content: space-between;
+    padding: 1rem 4rem;
 }
+
+/*nav a, nav a:visited {
+    color: #ffffff;
+}*/
 
 .logo {
     align-items: center;
@@ -42,8 +62,18 @@ nav {
 
 .logo img {
     height: 20%;
-    max-width: 10vw;
+    max-width: 6vw;
     padding-right: 1rem;
+}
+
+.logo h1 {
+    font-size: 4rem;
+}
+
+.links a {
+    font-family: 'Bit Potion', Helvetica, sans-serif;
+    font-size: 2.4rem;
+    margin: 0;
 }
 
 /* HOME =================================================== */
@@ -60,7 +90,7 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    outline: 2px solid #ffffff;
+    outline: 2px solid #f0d8b2;
     /*outline-offset: 2px;*/
     padding: 0.5rem;
 }
@@ -80,6 +110,7 @@ a:has(> .card) {
     min-height: 200px;
     max-width: 40vw;
     min-width: 200px;
+    overflow-wrap: normal;
 }
 
 .card:hover {
@@ -87,6 +118,12 @@ a:has(> .card) {
 }
 
 .card img {
-    max-width: 10vw;
+    max-width: 8vw;
     min-width: 8vw;
+}
+
+.card h1 {
+    font-size: 1.6rem;
+    max-width: 15vw;
+    text-align: center;
 }

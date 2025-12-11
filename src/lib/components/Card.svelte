@@ -5,6 +5,6 @@
 <a href="/products/{link}">
     <div class="card">
         <img src="/images/{image}" alt="{name}"/>
-        <p>{name}</p>
+        <h2>{name}</h2>
     </div>
 </a>
