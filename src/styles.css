@@ -16,8 +16,34 @@ h1 {
 p {
     font-family: 'Bit Potion', Helvetica, sans-serif;
     font-size: 1.8rem;
+    margin: 0;
+}
+
+/* HOME =================================================== */
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    align-items: center;
+    background-color: #f9e2c0;
+    border: 2px solid #baa381;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    min-height: 200px;
+    max-width: 40vw;
+    min-width: 200px;
 }
 
 .card img {
     max-width: 10vw;
+    min-width: 8vw;
 }

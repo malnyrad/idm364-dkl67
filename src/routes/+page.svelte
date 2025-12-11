@@ -7,8 +7,10 @@
 
 <h1>Hello and welcome to my site!</h1>
 
-{#if data.products}
-    {#each data.products as product}
-        <Card link="{product.slug}" image="{product.image}" name="{product.name}" />
-    {/each}
-{/if}
+<div class="container">
+    {#if data.products}
+        {#each data.products as product}
+            <Card link="{product.slug}" image="{product.image}" name="{product.name}" />
+        {/each}
+    {/if}
+</div>
