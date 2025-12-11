@@ -46,7 +46,7 @@ nav {
     padding-right: 1rem;
 }
 
-/**/
+/* HOME =================================================== */
 
 .container-outer {
     border: 10px solid #553624;
@@ -55,12 +55,14 @@ nav {
 
 .container-inner {
     align-items: center;
-    border: 6px solid #ffffff;
     border-radius: 4px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    outline: 2px solid #ffffff;
+    /*outline-offset: 2px;*/
+    padding: 0.5rem;
 }
 
 a:has(> .card) {
@@ -69,8 +71,8 @@ a:has(> .card) {
 
 .card {
     align-items: center;
-    background-color: #f9e2c0;
-    border: 2px solid #baa381;
+    background-color: #dcc39b;
+    border: 2px solid #7e6d50;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -78,6 +80,10 @@ a:has(> .card) {
     min-height: 200px;
     max-width: 40vw;
     min-width: 200px;
+}
+
+.card:hover {
+    background-color: #f9e2c0;
 }
 
 .card img {

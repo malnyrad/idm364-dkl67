@@ -4,10 +4,10 @@ export async function load() {
     const { data, error } = await supabase
     .from('dkl67_idm364')
     .select('*')
-    .order("id", { ascending: true });
+    .order("id", { ascending: true }); // display items in id order since they won't otherwise
 
     if (error) console.error('Error: ', error)
-    else console.log('Products: ', data)
+    //else console.log('Products: ', data)
 
     return {
         products: data

@@ -2,6 +2,7 @@
     let { data } = $props()
     $inspect(data)
 
+    // import components
     import Header from '$lib/components/Header.svelte';
     import Card from '$lib/components/Card.svelte';
 </script>
