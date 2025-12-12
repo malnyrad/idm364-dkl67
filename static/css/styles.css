@@ -18,7 +18,7 @@ html {
 
 h1 {
     font-family: "Jersey 15", Helvetica, sans-serif;
-    line-height: 0%;
+    line-height: 75%;
     margin: 0;
 }
 
@@ -61,8 +61,8 @@ nav {
 }
 
 .logo img {
-    height: 20%;
-    max-width: 6vw;
+    height: 4rem;
+    max-width: 6rem;
     padding-right: 1rem;
 }
 
@@ -76,7 +76,7 @@ nav {
     margin: 0;
 }
 
-/* PAGE =================================================== */
+/* PAGES ================================================== */
 
 .container-outer {
     border: 10px solid #553624;
@@ -93,6 +93,33 @@ nav {
     outline: 2px solid #f0d8b2;
     /*outline-offset: 2px;*/
     padding: 0.5rem;
+}
+
+.product {
+    padding: 4rem 2rem;
+}
+
+.product-image {
+    border: 2px solid #7e6d50;
+    border-radius: 6px;
+    background-color: #f9e2c0;
+    margin-right: 2rem;
+    max-width: 15rem;
+    min-width: 6rem;
+    padding: 1rem;
+}
+
+.product-details h1 {
+    font-size: 4rem;
+}
+
+.product-details h1, .product-details .element {
+    margin-bottom: 0.4rem;
+}
+
+.product-separator {
+    border-top: 4px solid #553624;
+    margin: 1rem 0;
 }
 
 /* CARD COMPONENT ========================================= */
@@ -140,6 +167,8 @@ a:has(> .card) {
     color: #ffffff;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    max-width: fit-content;
     padding-right: 6px;
 }
 

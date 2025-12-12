@@ -12,13 +12,11 @@
 <Header />
 <div class="container-outer">
 	<div class="product">
-		<div class="product-image">
-			<img src="/images/{data.product.image}" alt="{data.product.name}" />
-		</div>
+			<img src="/images/{data.product.image}" alt="{data.product.name}" class="product-image"/>
 		<div class="product-details">
 			<h1>{data.product.name}</h1>
 			<ElementChip element={data.product.element} />
-			<hr>
+			<hr class="product-separator">
 			<div class="product-quantity">
 				<QuantityCounter />
 				<PriceChip price={data.product.price} />
