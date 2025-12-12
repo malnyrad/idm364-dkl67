@@ -8,9 +8,9 @@
 
 <a href="/products/{link}">
     <div class="card">
-        <img src="/images/{image}" alt="{name}"/>
+        <img src="/images/{image}" alt="{name}" />
         <h2>{name}</h2>
-        <ElementChip element="{element}" />
-        <PriceChip price="{price}" />
+        <ElementChip element={element} />
+        <PriceChip price={price} />
     </div>
 </a>

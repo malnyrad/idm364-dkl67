@@ -8,12 +8,11 @@
 </script>
 
 <Header />
-
 <div class="container-outer">
     <div class="container-inner">
         {#if data.products}
             {#each data.products as product}
-                <Card link="{product.slug}" image="{product.image}" name="{product.name}" element="{product.element}" price="{product.price}" />
+                <Card link={product.slug} image={product.image} name={product.name} element={product.element} price={product.price} />
             {/each}
         {/if}
     </div>

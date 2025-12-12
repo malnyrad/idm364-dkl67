@@ -1,6 +1,8 @@
-<script>
+<script lang="js">
+	let { children } = $props();
+
+	// import favicon
 	import favicon from '$lib/assets/favicon.webp';
-	let {children} = $props();
 </script>
 
 <svelte:head>

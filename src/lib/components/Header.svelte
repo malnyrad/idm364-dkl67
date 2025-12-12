@@ -6,7 +6,7 @@
     <nav>
         <a href="/">
             <div class="logo">
-                <img src="/images/favicon.webp" alt=""/>
+                <img src="/images/favicon.webp" alt="" />
                 <h1>Moonbury Sundries</h1>
             </div>
         </a>

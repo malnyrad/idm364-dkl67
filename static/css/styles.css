@@ -76,14 +76,14 @@ nav {
     margin: 0;
 }
 
-/* HOME =================================================== */
+/* PAGE =================================================== */
 
 .container-outer {
     border: 10px solid #553624;
     border-radius: 8px;
 }
 
-.container-inner {
+.container-inner, .product {
     align-items: center;
     border-radius: 4px;
     display: flex;
@@ -94,6 +94,8 @@ nav {
     /*outline-offset: 2px;*/
     padding: 0.5rem;
 }
+
+/* CARD COMPONENT ========================================= */
 
 a:has(> .card) {
     margin: 1rem;
@@ -130,6 +132,8 @@ a:has(> .card) {
     text-align: center;
 }
 
+/* ELEMENT CHIP COMPONENT ================================= */
+
 .element {
     align-items: center;
     border-radius: 4px;
@@ -144,6 +148,8 @@ a:has(> .card) {
     max-width: 2rem;
     min-width: 2rem;
 }
+
+/* PRICE CHIP COMPONENT =================================== */
 
 .price {
     align-items: center;
