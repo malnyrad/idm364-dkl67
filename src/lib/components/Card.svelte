@@ -1,8 +1,9 @@
 <script lang="js">
-    let { link, image, name, element } = $props();
+    let { link, image, name, element, price } = $props();
 
     // import components
     import ElementChip from "./ElementChip.svelte";
+    import PriceChip from "./PriceChip.svelte";
 </script>
 
 <a href="/products/{link}">
@@ -10,5 +11,6 @@
         <img src="/images/{image}" alt="{name}"/>
         <h2>{name}</h2>
         <ElementChip element="{element}" />
+        <PriceChip price="{price}" />
     </div>
 </a>

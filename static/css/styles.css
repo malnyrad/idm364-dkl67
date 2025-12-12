@@ -111,6 +111,7 @@ a:has(> .card) {
     max-width: 40vw;
     min-width: 200px;
     overflow-wrap: normal;
+    padding: 1rem;
 }
 
 .card:hover {
@@ -122,14 +123,15 @@ a:has(> .card) {
     min-width: 8vw;
 }
 
-.card h1 {
+.card h2 {
     font-size: 1.6rem;
+    margin: 0.2rem 0 0.4rem 0;
     max-width: 15vw;
     text-align: center;
 }
 
 .element {
-    border: 2px solid black;
+    align-items: center;
     border-radius: 4px;
     color: #ffffff;
     display: flex;
@@ -141,4 +143,21 @@ a:has(> .card) {
     height: 2rem;
     max-width: 2rem;
     min-width: 2rem;
+}
+
+.price {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.price img {
+    height: 1.2rem;
+    max-width: 1.2rem;
+    min-width: 1.2rem;
+    padding-right: 6px;
+}
+
+.price p {
+    font-weight: 700;
 }

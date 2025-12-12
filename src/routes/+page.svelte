@@ -13,7 +13,7 @@
     <div class="container-inner">
         {#if data.products}
             {#each data.products as product}
-                <Card link="{product.slug}" image="{product.image}" name="{product.name}" element="{product.element}" />
+                <Card link="{product.slug}" image="{product.image}" name="{product.name}" element="{product.element}" price="{product.price}" />
             {/each}
         {/if}
     </div>
