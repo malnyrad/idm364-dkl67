@@ -118,7 +118,7 @@ a:has(> .card) {
 }
 
 .card img {
-    max-width: 8vw;
+    max-width: 6rem;
     min-width: 8vw;
 }
 
@@ -126,4 +126,19 @@ a:has(> .card) {
     font-size: 1.6rem;
     max-width: 15vw;
     text-align: center;
+}
+
+.element {
+    border: 2px solid black;
+    border-radius: 4px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    padding-right: 6px;
+}
+
+.element img {
+    height: 2rem;
+    max-width: 2rem;
+    min-width: 2rem;
 }
