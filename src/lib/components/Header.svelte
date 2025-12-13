@@ -1,5 +1,6 @@
 <script lang="js">
-
+    // import components
+    import CartNavButton from './CartNavButton.svelte';
 </script>
 
 <header>
@@ -12,7 +13,7 @@
         </a>
         <div class="links">
             <a href="/">Home</a>
-            <a href="/cart">Basket</a>
+            <CartNavButton />
         </div>
     </nav>
 </header>
