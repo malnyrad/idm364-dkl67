@@ -19,7 +19,7 @@
 			<ElementChip element={data.product.element} />
 			<hr class="product-separator">
 			<div class="product-quantity">
-				<QuantityCounter />
+				<QuantityCounter id={data.product.id} />
 				<PriceChip price={data.product.price} />
 			</div>
 			<p>{data.product.description}</p>

@@ -1,15 +1,10 @@
-<script>
-  import { count } from '$lib/stores.js';
+<script lang="js">
+    /** @type {{ id: number }} */
+    let { data, id } = $props();
 
-  function increment() {
-    count.update((n) => n + 1);
-  }
-
-  function decrement() {
-    count.update((n) => Math.max(1, n - 1));
-  }
+    import { count } from '$lib/stores';
 </script>
 
-<button on:click="{increment}">+</button>
+<button onclick="{count.increment}">+</button>
 <p>{$count}</p>
-<button on:click="{decrement}">-</button>
+<button onclick="{count.decrement}">-</button>
