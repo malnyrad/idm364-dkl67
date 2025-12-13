@@ -1,4 +1,5 @@
 <script lang="js">
+    /** @type {{ link: string, image: string, name: string, element: string, price: number }} */
     let { link, image, name, element, price } = $props();
 
     // import components

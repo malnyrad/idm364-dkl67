@@ -6,6 +6,7 @@
 	import ElementChip from '$lib/components/ElementChip.svelte';
 	import PriceChip from '$lib/components/PriceChip.svelte';
 	import QuantityCounter from '$lib/components/QuantityCounter.svelte';
+	import AddToCartButton from '$lib/components/AddToCartButton.svelte';
 </script>
 
 
@@ -22,6 +23,7 @@
 				<PriceChip price={data.product.price} />
 			</div>
 			<p>{data.product.description}</p>
+			<AddToCartButton price={data.product.price} />
 		</div>
 	</div>
 </div>

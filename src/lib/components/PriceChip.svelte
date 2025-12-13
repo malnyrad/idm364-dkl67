@@ -1,4 +1,5 @@
 <script lang="js">
+    /** @type {{ price: number }} */
     let { price } = $props();
 </script>
 
