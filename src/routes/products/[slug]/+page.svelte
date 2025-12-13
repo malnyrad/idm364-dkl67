@@ -1,14 +1,14 @@
-<script lang="ts">
-	let { data } = $props();
-
+<script lang="js">
 	// import components
 	import Header from '$lib/components/Header.svelte';
 	import ElementChip from '$lib/components/ElementChip.svelte';
 	import PriceChip from '$lib/components/PriceChip.svelte';
 	import QuantityCounter from '$lib/components/QuantityCounter.svelte';
 	import AddToCartButton from '$lib/components/AddToCartButton.svelte';
-</script>
 
+	// define variables
+	let { data } = $props();
+</script>
 
 <Header />
 <div class="container-outer">
@@ -23,7 +23,7 @@
 				<PriceChip price={data.product.price} />
 			</div>
 			<p>{data.product.description}</p>
-			<AddToCartButton price={data.product.price} />
+			<AddToCartButton product={data.product} />
 		</div>
 	</div>
 </div>

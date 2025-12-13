@@ -2,19 +2,19 @@ import { supabase } from '$lib/supabase'
 
 export async function load() {
     // fetch data
-    const { data, errorData } = await supabase
+    const { data, error_data } = await supabase
     .from('dkl67_idm364')
     .select('*')
     .order("id", { ascending: true }); // display items in id order since they won't otherwise
 
-    if (errorData) console.error('Error: ', errorData)
+    if (error_data) console.error('Error: ', error_data)
 
     // fetch total item count
-    const { count, errorCount } = await supabase
+    const { count, error_count } = await supabase
     .from('dkl67_idm364')
     .select('*', { count: 'exact', head: true });
 
-    if (errorCount) console.error('Error fetching count:', errorCount)
+    if (error_count) console.error('Error fetching count:', error_count)
     else console.log('Total row count: ', count)
 
     return {
