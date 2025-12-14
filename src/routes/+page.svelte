@@ -4,6 +4,7 @@
     // import components
     import Header from '$lib/components/Header.svelte';
     import Card from '$lib/components/Card.svelte';
+    import Footer from '$lib/components/Footer.svelte';
 
     // define variables
     let { data } = $props();
@@ -20,3 +21,4 @@
         {/if}
     </div>
 </div>
+<Footer />

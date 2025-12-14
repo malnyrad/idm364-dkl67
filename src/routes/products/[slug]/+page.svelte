@@ -8,6 +8,7 @@
 	import ElementChip from '$lib/components/ElementChip.svelte';
 	import PriceChip from '$lib/components/PriceChip.svelte';
 	import QuantityCounter from '$lib/components/QuantityCounter.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
 	// define variables
 	let { data } = $props();
@@ -41,3 +42,4 @@
 		</div>
 	</div>
 </div>
+<Footer />

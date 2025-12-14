@@ -6,6 +6,7 @@
 	import { cartTotal } from '$lib/cart.js';
     import Header from '$lib/components/Header.svelte';
 	import CartItem from '$lib/components/CartItem.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 
     // define variables
     let { data } = $props();
@@ -31,3 +32,4 @@
 		<p>{$cartTotal}</p>
 	</div>
 </div>
+<Footer />
