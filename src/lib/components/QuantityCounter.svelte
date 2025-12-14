@@ -1,10 +1,19 @@
 <script lang="js">
-    /** @type {{ id: number }} */
-    let { data, id } = $props();
+	import { get_quantity_store } from '$lib/quantity.js';
 
-    import { count } from '$lib/stores';
+	export let product_id;
+	
+    const count = get_quantity_store(product_id);
+
+	function increment() {
+		count.update(n => n + 1);
+	}
+
+	function decrement() {
+		count.update(n => Math.max(1, n - 1));
+	}
 </script>
 
-<button onclick="{count.increment}">+</button>
+<button onclick={increment}>+</button>
 <p>{$count}</p>
-<button onclick="{count.decrement}">-</button>
+<button onclick={decrement}>-</button>

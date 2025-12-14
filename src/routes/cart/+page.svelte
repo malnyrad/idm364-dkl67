@@ -1,11 +1,11 @@
 <script lang="js">
     // import components
     import Header from '$lib/components/Header.svelte';
-    import QuantityCounter from '$lib/components/QuantityCounter.svelte';
     import { cart } from '$lib/cart.js';
+	import QuantityCounter from '$lib/components/QuantityCounter.svelte';
 
     // define variables
-    let { data, count } = $props()
+    let { data } = $props()
     $inspect(data)
 </script>
 

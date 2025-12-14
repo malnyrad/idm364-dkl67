@@ -4,20 +4,18 @@ function create_cart() {
     const { subscribe, update } = writable([]);
     return {
         subscribe,
-        increment: () => update((n) => n + 1),
-        decrement: () => update((n) => Math.max(0, n - 1)),
-        add(product) {
+        add(product, quantity) {
             update(items => {
                 const existing = items.find((n) => n.id === product.id);
 
                 if (existing) {
                     return items.map((n) =>
                     n.id === product.id
-                    ? { ...n, count: n.count + 1 }
+                    ? { ...n, count: n.count + quantity }
                     : n);
                 }
 
-                return [...items, { ...product, count: 1 }];
+                return [...items, { ...product, count: quantity }];
             });
         },
 
