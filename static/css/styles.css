@@ -57,7 +57,7 @@ button {
 
 /* PAGES ================================================== */
 
-.container-outer, .product-outer {
+.container-outer, .product-outer, .cart-outer {
     border: 10px solid #553624;
     border-radius: 8px;
 }
@@ -120,10 +120,43 @@ button {
     margin-top: 2rem;
 }
 
+.cart-outer {
+    min-height: 80vh;
+}
+
+.cart-inner {
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 78.2vh;
+    outline: 2px solid #f0d8b2;
+    /*outline-offset: 2px;*/
+    padding: 0.5rem;
+}
+
+.cart-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0 2rem 0;
+    width: 90%;
+}
+
+.cart-header h1 {
+    font-size: 4rem;
+}
+
+.cart-inner .total {
+    margin: auto 0 1rem 0;
+}
+
 /* CARD COMPONENT ========================================= */
 
 a:has(> .card) {
     margin: 1rem;
+    text-decoration: none;
 }
 
 .card {
@@ -155,6 +188,54 @@ a:has(> .card) {
     margin: 0.2rem 0 0.4rem 0;
     max-width: 15vw;
     text-align: center;
+}
+
+/* CART ITEM COMPONENT ==================================== */
+
+.cart-item {
+    align-items: center;
+    background-color: #f9e2c0;
+    border: 2px solid #7e6d50;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    width: 90vw;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.item-details img {
+    border: 2px solid #7e6d50;
+    border-radius: 4px;
+    margin-right: 2rem;
+    padding: 0.6rem;
+    width: 8rem;
+}
+
+.item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+.item-text-main h2 {
+    font-size: 2rem;
+}
+
+.item-quantity, .item-subtotal {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.item-subtotal {
+    justify-content: end;
 }
 
 /* ELEMENT CHIP COMPONENT ================================= */
@@ -228,7 +309,9 @@ nav a {
 }
 
 .price img {
+    border: none;
     height: 1.2rem;
+    margin-right: 0;
     max-width: 1.2rem;
     min-width: 1.2rem;
     padding-right: 6px;

@@ -15,19 +15,25 @@
 </script>
 
 <Header />
-<h1>Your Items</h1>
-<button class="remove" onclick={() => cart.remove_all()}>
-	Remove all items
-</button>
-{#if $cart.length === 0}
-	<p>Your basket is empty. Why not <a href="/">browse our wares?</a></p>
-{:else}
-	{#each $cart as item}
-		<CartItem image={item.image} name={item.name} count={item.count} price={item.price} id={item.id} />
-	{/each}
-{/if}
-<div class="total">
-	<h2>Grand Total</h2>
-	<PriceChip price={$cartTotal} />
+<div class="cart-outer">
+	<div class="cart-inner">
+		<div class="cart-header">
+			<h1>Your Items</h1>
+			<button class="remove" onclick={() => cart.remove_all()}>
+				Remove all items
+			</button>
+		</div>
+		{#if $cart.length === 0}
+			<p>Your basket is empty. Why not <a href="/">browse our wares?</a></p>
+		{:else}
+			{#each $cart as item}
+				<CartItem image={item.image} name={item.name} count={item.count} price={item.price} id={item.id} />
+			{/each}
+		{/if}
+		<div class="total">
+			<h2>Grand Total</h2>
+			<PriceChip price={$cartTotal} />
+		</div>
+	</div>
 </div>
 <Footer />

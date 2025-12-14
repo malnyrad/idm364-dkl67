@@ -10,12 +10,17 @@
     <div class="item-details">
         <img src="/images/{image}" alt="" />
         <div class="item-text">
-            <h2>{name}</h2>
-            <div class="item-quantity">
-                <p>{count} × </p>
-                <PriceChip price={price} />
+            <div class="item-text-main">
+                <h2>{name}</h2>
+                <div class="item-quantity">
+                    <p>{count} × </p>
+                    <PriceChip price={price} />
+                </div>
             </div>
-            <PriceChip price={count * price} />
+            <div class="item-subtotal">
+                <p>You pay: </p>
+                <PriceChip price={count * price} />
+            </div>
         </div>
     </div>
     <button class="remove" onclick={() => cart.remove(id)}>
