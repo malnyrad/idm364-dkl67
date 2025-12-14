@@ -7,6 +7,7 @@
     import Header from '$lib/components/Header.svelte';
 	import CartItem from '$lib/components/CartItem.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import PriceChip from '$lib/components/PriceChip.svelte';
 
     // define variables
     let { data } = $props();
@@ -27,9 +28,6 @@
 {/if}
 <div class="total">
 	<h2>Grand Total</h2>
-	<div class="total-price">
-		<img src="/images/coin.webp" alt="" />
-		<p>{$cartTotal}</p>
-	</div>
+	<PriceChip price={$cartTotal} />
 </div>
 <Footer />
