@@ -18,6 +18,8 @@
 	}
 </script>
 
-<button onclick={increment}>+</button>
-<p>{$count}</p>
-<button onclick={decrement}>-</button>
+<div class="counter">
+	<button class="minus" onclick={decrement}>-</button>
+	<p>{$count}</p>
+	<button class="plus" onclick={increment}>+</button>
+</div>

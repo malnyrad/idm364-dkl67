@@ -24,21 +24,21 @@
 </script>
 
 <Header />
-<div class="container-outer">
-	<div class="product">
+<div class="product-outer">
+	<div class="product-inner">
 			<img src="/images/{product.image}" alt="{product.name}" class="product-image"/>
 		<div class="product-details">
 			<h1>{product.name}</h1>
 			<ElementChip element={product.element} />
 			<hr class="product-separator">
+			<p>{product.description}</p>
+			<PriceChip price={product.price} />
 			<div class="product-quantity">
 				<QuantityCounter product_id={product.id} />
-				<PriceChip price={product.price} />
+				<button onclick={add_to_cart}>
+					Put {$quantity} in basket
+				</button>
 			</div>
-			<p>{product.description}</p>
-			<button onclick={add_to_cart}>
-				Put {$quantity} in basket
-			</button>
 		</div>
 	</div>
 </div>
