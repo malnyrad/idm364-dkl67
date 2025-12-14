@@ -10,11 +10,11 @@
 
     // declare functions
 	function increment() {
-		count.update(n => n + 1);
+		count.update((n) => n + 1);
 	}
 
 	function decrement() {
-		count.update(n => Math.max(1, n - 1));
+		count.update((n) => Math.max(1, n - 1));
 	}
 </script>
 

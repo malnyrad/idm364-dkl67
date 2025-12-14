@@ -27,7 +27,7 @@ function create_cart() {
             update(items => items.filter((n) => n.id !== id));
         },
 
-        clear() {
+        remove_all() {
             update(() => []);
         }
   };
