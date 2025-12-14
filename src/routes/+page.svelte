@@ -1,10 +1,13 @@
 <script lang="js">
-    let { data } = $props()
-    $inspect(data)
+    // HOME PAGE
 
     // import components
     import Header from '$lib/components/Header.svelte';
     import Card from '$lib/components/Card.svelte';
+
+    // define variables
+    let { data } = $props();
+    $inspect(data);
 </script>
 
 <Header />

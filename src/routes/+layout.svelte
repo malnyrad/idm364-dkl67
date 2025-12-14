@@ -1,7 +1,6 @@
 <script lang="js">
+	// import components
 	let { children } = $props();
-
-	// import favicon
 	import favicon from '$lib/assets/favicon.webp';
 </script>
 

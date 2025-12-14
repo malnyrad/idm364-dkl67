@@ -1,4 +1,5 @@
 <script lang="js">
+    // define variables
     /** @type {{ element: string }} */
     let { element } = $props();
 </script>

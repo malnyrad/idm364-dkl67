@@ -1,6 +1,8 @@
+// import components
 import { supabase } from '$lib/supabase';
 import { json } from '@sveltejs/kit';
 
+// declare functions
 export async function GET() {
 	const { data: products, error } = await supabase
 		.from('dkl67_idm364')

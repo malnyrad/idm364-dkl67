@@ -1,12 +1,14 @@
 <script lang="js">
+	// CART PAGE
+
     // import components
     import Header from '$lib/components/Header.svelte';
-    import { cart } from '$lib/cart.js';
-	import QuantityCounter from '$lib/components/QuantityCounter.svelte';
+	import { cart } from '$lib/cart.js';
+	import { cartTotal } from '$lib/cart.js';
 
     // define variables
-    let { data } = $props()
-    $inspect(data)
+    let { data } = $props();
+    $inspect(data);
 </script>
 
 <Header />
@@ -22,3 +24,10 @@
 		</div>
 	{/each}
 {/if}
+<div class="total">
+	<h2>Grand Total</h2>
+	<div class="total-price">
+		<img src="/images/coin.webp" alt="" />
+		<p>{$cartTotal}</p>
+	</div>
+</div>

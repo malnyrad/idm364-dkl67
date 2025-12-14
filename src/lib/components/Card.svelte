@@ -1,10 +1,11 @@
 <script lang="js">
-    /** @type {{ link: string, image: string, name: string, element: string, price: number }} */
-    let { link, image, name, element, price } = $props();
-
     // import components
     import ElementChip from "./ElementChip.svelte";
     import PriceChip from "./PriceChip.svelte";
+
+    // define variables
+    /** @type {{ link: string, image: string, name: string, element: string, price: number }} */
+    let { link, image, name, element, price } = $props();
 </script>
 
 <a href="/products/{link}">

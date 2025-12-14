@@ -1,17 +1,20 @@
 <script lang="js">
+	// PRODUCT PAGE
+
 	// import components
+  	import { cart } from '$lib/cart.js';
+	import { get_quantity_store, reset_quantity } from '$lib/quantity.js';
 	import Header from '$lib/components/Header.svelte';
 	import ElementChip from '$lib/components/ElementChip.svelte';
 	import PriceChip from '$lib/components/PriceChip.svelte';
 	import QuantityCounter from '$lib/components/QuantityCounter.svelte';
-	import { get_quantity_store, reset_quantity } from '$lib/quantity.js';
-  	import { cart } from '$lib/cart.js';
 
 	// define variables
 	let { data } = $props();
 	const product = data.product;
   	const quantity = get_quantity_store(product.id);
 
+	// declare functions
 	function add_to_cart() {
     	cart.add(product, $quantity);
 		// reset after adding to cart

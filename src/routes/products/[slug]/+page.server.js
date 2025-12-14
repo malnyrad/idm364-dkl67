@@ -1,8 +1,11 @@
-import { supabase } from '$lib/supabase'
+// import components
+import { supabase } from '$lib/supabase';
 
+// declare functions
 export async function load({ params }) {
     const slug = params.slug;
 
+    // fetch single item data
 	const { data, error } = await supabase
     .from('dkl67_idm364')
     .select('*')
@@ -10,9 +13,11 @@ export async function load({ params }) {
     .limit(1) // only allowed to return one row
     .single()
 
-	//console.log('DB result:', data);
+	console.log('DB result: ', data);
 
-	if (error) console.error(error);
+	if (error) console.error('Error: ', error);
 
-	return { product: data };
+	return {
+        product: data
+    };
 }

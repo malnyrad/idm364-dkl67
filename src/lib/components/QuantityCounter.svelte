@@ -1,10 +1,14 @@
 <script lang="js">
+    // import components
 	import { get_quantity_store } from '$lib/quantity.js';
 
-	export let product_id;
+	// export components
+    export let product_id;
 	
+    // define variables
     const count = get_quantity_store(product_id);
 
+    // declare functions
 	function increment() {
 		count.update(n => n + 1);
 	}
