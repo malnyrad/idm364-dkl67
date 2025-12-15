@@ -25,8 +25,10 @@
 
 <Header />
 <div class="product-outer">
-	<div class="product-inner">
-			<img src="/images/{product.image}" alt="{product.name}" class="product-image"/>
+	<div class="product-inner ">
+		<div class="pixel-corners--wrapper">
+			<img src="/images/{product.image}" alt="{product.name}" class="product-image pixel-corners"/>
+		</div>
 		<div class="product-details">
 			<h1>{product.name}</h1>
 			<ElementChip element={product.element} />
@@ -35,7 +37,7 @@
 			<PriceChip price={product.price} />
 			<div class="product-quantity">
 				<QuantityCounter product_id={product.id} />
-				<button onclick={add_to_cart}>
+				<button class="pixel-corners-2-rad4" onclick={add_to_cart}>
 					Put {$quantity} in basket
 				</button>
 			</div>

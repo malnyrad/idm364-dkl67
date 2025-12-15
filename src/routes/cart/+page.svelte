@@ -19,7 +19,7 @@
 	<div class="cart-inner">
 		<div class="cart-header">
 			<h1>Your Items</h1>
-			<button class="remove" onclick={() => cart.remove_all()}>
+			<button class="remove pixel-corners-2-rad4" onclick={() => cart.remove_all()}>
 				Remove all items
 			</button>
 		</div>
@@ -27,7 +27,7 @@
 			<p>Your basket is empty. Why not <a href="/">browse our wares?</a></p>
 		{:else}
 			{#each $cart as item}
-				<CartItem image={item.image} name={item.name} count={item.count} price={item.price} id={item.id} />
+				<CartItem link={item.slug} image={item.image} name={item.name} count={item.count} price={item.price} description={item.description} id={item.id} />
 			{/each}
 		{/if}
 		<div class="total">
