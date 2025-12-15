@@ -1,4 +1,5 @@
 <script lang="js">
+    import { cart } from "$lib/cart.js";
 	import PriceChip from "./PriceChip.svelte";
 
     // define variables
