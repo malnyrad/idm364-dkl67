@@ -117,7 +117,7 @@ button {
     margin: 1rem 0;
 }
 
-.product-details .price, .product-quantity {
+.product-quantity {
     justify-content: end;
 }
 
@@ -163,6 +163,11 @@ button {
 
 .total h2 {
     font-size: 2rem;
+}
+
+.total .price p {
+    font-size: 3rem;
+    line-height: 75%;
 }
 
 /* CARD COMPONENT ========================================= */
