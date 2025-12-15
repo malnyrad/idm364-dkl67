@@ -18,7 +18,7 @@
 	}
 </script>
 
-<div class="counter">
+<div class="counter pixel-corners-3">
 	<button class="minus" onclick={decrement}>-</button>
 	<p>{$count}</p>
 	<button class="plus" onclick={increment}>+</button>

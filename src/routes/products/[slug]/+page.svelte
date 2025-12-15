@@ -24,22 +24,24 @@
 </script>
 
 <Header />
-<div class="product-outer">
+<div class="pixel-corners-2">
 	<div class="product-inner ">
 		<div class="pixel-corners--wrapper">
 			<img src="/images/{product.image}" alt="{product.name}" class="product-image pixel-corners"/>
 		</div>
-		<div class="product-details">
-			<h1>{product.name}</h1>
-			<ElementChip element={product.element} />
-			<hr class="product-separator">
-			<p>{product.description}</p>
-			<PriceChip price={product.price} />
-			<div class="product-quantity">
-				<QuantityCounter product_id={product.id} />
-				<button class="pixel-corners-2-rad4" onclick={add_to_cart}>
-					Put {$quantity} in basket
-				</button>
+		<div class="product-details-background">
+			<div class="product-details">
+				<h1>{product.name}</h1>
+				<ElementChip element={product.element} />
+				<hr class="product-separator">
+				<p>{product.description}</p>
+				<PriceChip price={product.price} />
+				<div class="product-quantity">
+					<QuantityCounter product_id={product.id} />
+					<button class="pixel-corners-2-rad4" onclick={add_to_cart}>
+						Put {$quantity} in basket
+					</button>
+				</div>
 			</div>
 		</div>
 	</div>

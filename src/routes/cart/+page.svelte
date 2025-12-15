@@ -15,7 +15,7 @@
 </script>
 
 <Header />
-<div class="cart-outer">
+<div class="pixel-corners-2">
 	<div class="cart-inner">
 		<div class="cart-header">
 			<h1>Your Items</h1>

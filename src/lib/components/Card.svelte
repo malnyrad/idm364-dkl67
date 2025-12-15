@@ -9,7 +9,7 @@
 </script>
 
 <a href="/products/{link}">
-    <div class="card">
+    <div class="card pixel-corners">
         <img src="/images/{image}" alt="{name}" />
         <h2>{name}</h2>
         <ElementChip element={element} />

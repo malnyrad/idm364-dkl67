@@ -12,7 +12,7 @@
 </script>
 
 <Header />
-<div class="container-outer">
+<div class="pixel-corners-2">
     <div class="container-inner">
         {#if data.products}
             {#each data.products as product}
