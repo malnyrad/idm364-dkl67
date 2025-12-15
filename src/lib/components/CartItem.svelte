@@ -25,8 +25,8 @@
                         Remove
                     </button>
                 </div>
-                <hr class="product-separator">
-                <p>{description}</p>
+                <hr class="product-separator item-description">
+                <p class="item-description">{description}</p>
                 <div class="item-subtotal">
                     <p>You pay: </p>
                     <PriceChip price={count * price} />

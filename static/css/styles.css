@@ -389,6 +389,50 @@ nav a {
     padding: 0 0.8rem;
 }
 
+/* BREAKPOINT STYLING ===================================== */
+
+@media (max-width: 1470px) {
+    .product-inner {
+        height: auto;
+        padding: 2rem 4rem;
+    }
+
+    .product-details-background {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    .item-text {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 1330px) {
+    .card {
+        min-height: 240px;
+    }
+
+    .product-details {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 1100px) {
+    .item-text-background {
+        margin-left: 1rem;
+    }
+
+    .item-text {
+        width: 30vw;
+    }
+
+    .item-description {
+        display: none;
+    }
+}
+
 /* PIXEL CORNERS ========================================== */
 /* generated from https://pixelcorners.lukeb.co.uk/ */
 
